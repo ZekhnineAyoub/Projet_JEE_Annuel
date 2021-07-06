@@ -1,0 +1,17 @@
+
+{
+    "location": "Colombes",
+    "specialty": "Tacos",
+    "ratings": "TroisEtoiles",
+    "name": "colombes tacos",
+    "phone_number": "0622154879",
+
+    "menu":{
+        "id":78,
+        "menu_type":" menu tacos",
+        "menu_item": "item tacos",
+        "menu_price":9
+
+    }
+
+}
