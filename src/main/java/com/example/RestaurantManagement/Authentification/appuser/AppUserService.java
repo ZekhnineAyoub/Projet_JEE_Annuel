@@ -28,6 +28,12 @@ public class AppUserService implements UserDetailsService {
         return appUserRepository.findByEmail(email)
                 .orElseThrow(()-> new UsernameNotFoundException(String.format(USER_NOT_FOUND_MSG,email)));
     }
+    public AppUser getUserById(Long UserId){
+        return appUserRepository.getById(UserId);
+    }
+    /*public Long getUserId(String email){
+        return appUserRepository.findByEmail(email);
+    }*/
 
     public String signUpUser(AppUser appUser){
         boolean userExiste =  appUserRepository.findByEmail(appUser.getEmail()).isPresent();
