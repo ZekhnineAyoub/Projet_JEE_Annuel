@@ -23,7 +23,6 @@ public class AddToCartDto {
     public AddToCartDto(Cart cart) {
         this.setId(cart.getId());
         this.setMenuId(cart.getMenuId());
-        this.setUserId(cart.getUserId());
         this.setQuantity(cart.getQuantity());
     }
 
