@@ -6,7 +6,6 @@ import com.sun.istack.NotNull;
 
 public class CartDto {
     private Long id;
-    private @NotNull Integer userId;
     private @NotNull Integer quantity;
     private @NotNull Menu menu;
 
@@ -23,7 +22,6 @@ public class CartDto {
     public String toString() {
         return "CartDto{" +
                 "id=" + id +
-                ", userId=" + userId +
                 ", quantity=" + quantity +
                 ", Menu=" + menu.toString() +
                 '}';
@@ -35,14 +33,6 @@ public class CartDto {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer userId) {
-        this.userId = userId;
     }
 
     public Integer getQuantity() {

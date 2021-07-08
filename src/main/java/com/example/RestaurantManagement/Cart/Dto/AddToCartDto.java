@@ -5,17 +5,14 @@ import com.sun.istack.NotNull;
 
 public class AddToCartDto {
     private Long id;
-    private @NotNull Integer userId;
-    private @NotNull
-    Long menuId;
+    private @NotNull Long menuId;
     private @NotNull Integer quantity;
 
     public AddToCartDto() {
     }
 
-    public AddToCartDto(Long id, @NotNull Integer userId, @NotNull Long menuId, @NotNull Integer quantity) {
+    public AddToCartDto(Long id, @NotNull Long menuId, @NotNull Integer quantity) {
         this.id = id;
-        this.userId = userId;
         this.menuId = menuId;
         this.quantity = quantity;
     }
@@ -30,7 +27,6 @@ public class AddToCartDto {
     public String toString() {
         return "CartDto{" +
                 "id=" + id +
-                ", userId=" + userId +
                 ", menuId=" + menuId +
                 ", quantity=" + quantity +
                 ",";
@@ -42,14 +38,6 @@ public class AddToCartDto {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer userId) {
-        this.userId = userId;
     }
 
     public Long getMenuId() {
